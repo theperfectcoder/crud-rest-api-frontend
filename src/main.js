@@ -5,7 +5,7 @@ import './index.css'
 import axios from 'axios'
 import './assets/tailwind.css'
 
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api/';
+axios.defaults.baseURL = 'https://crud-test-backend.herokuapp.com/api/';
 axios.interceptors.request.use(
     (config) => {
         let token = localStorage.getItem('token')
